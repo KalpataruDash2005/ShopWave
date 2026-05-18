@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopWave — Discover. Shop. Love.</title>
+  <meta name="description"
+    content="ShopWave — A modern e-commerce platform with thousands of products across every category.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23ff6b4a'/><text y='.9em' font-size='70' x='15'>S</text></svg>">
+</head>
+
+<body data-page="home">
+
+  <div id="toast-container"></div>
+
+  <header>
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+      <div class="container">
+
+        <a href="index.html" class="nav-logo" aria-label="ShopWave Home">
+          <div class="logo-mark"><img src="assets/logo.png" alt=""></div>
+          <span class="logo-text">Shop<span>Wave</span></span>
+        </a>
+
+        <div class="nav-search" role="search">
+          <input type="search" id="search-input" placeholder="Search products, brands, categories…"
+            aria-label="Search products" autocomplete="off">
+          <button class="search-btn" aria-label="Search">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+              <circle cx="11" cy="11" r="8" />
+              <path d="m21 21-4.35-4.35" />
+            </svg>
+          </button>
+        </div>
+
+        <div class="nav-actions">
+          <a href="#" class="nav-btn cart-btn" title="My Orders">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2" />
+              <rect x="9" y="3" width="6" height="4" rx="1" />
+            </svg>
+            <span>Orders</span>
+          </a>
+
+          <a href="cart.html" class="nav-btn cart-btn" title="View Cart" aria-label="Shopping cart">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" />
+              <line x1="3" y1="6" x2="21" y2="6" />
+              <path d="M16 10a4 4 0 01-8 0" />
+            </svg>
+            <span>Cart</span>
+            <span class="cart-badge" style="display:none">0</span>
+          </a>
+
+          <a href="admin.html" class="nav-btn cart-btn" title="View Cart" aria-label="Shopping cart">
+            <span></span>
+            <span>👤 Admin</span>
+            <span class="cart-badge" style="display:none">0</span>
+          </a>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero" aria-label="Hero banner">
+      <div class="container">
+        <div class="hero-inner">
+
+          <div class="hero-content">
+            <div class="hero-eyebrow">
+              ✦ Curated for the Discerning
+            </div>
+            <h1 class="hero-title">
+              Discover the<br>
+              <em>Exquisite</em>
+            </h1>
+            <p class="hero-sub">
+              Thoughtfully curated collections. Timeless quality, refined taste. Every piece selected with intention.
+            </p>
+            <div class="hero-cta-group">
+              <a href="#products" class="btn-primary">
+                Shop Now
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </a>
+              <a href="#" class="btn-outline">
+                View Deals
+              </a>
+            </div>
+
+            <div class="hero-stats">
+              <div class="hero-stat">
+                <div class="num">50K+</div>
+                <div class="label">Products</div>
+              </div>
+              <div class="hero-stat">
+                <div class="num">2M+</div>
+                <div class="label">Customers</div>
+              </div>
+              <div class="hero-stat">
+                <div class="num">4.8★</div>
+                <div class="label">Rating</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual" aria-hidden="true">
+
+            <div class="hero-card">
+              <img src="https://images.unsplash.com/photo-1498049794561-7780e7231661?w=600&q=80&fit=crop"
+                alt="Electronics — headphones and devices" class="hero-card-img">
+              <div class="hero-card-overlay">
+                <span class="hero-card-tag">Electronics</span>
+                <span class="hero-card-label">New Arrivals</span>
+              </div>
+            </div>
+
+            <div class="hero-card">
+              <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400&q=80&fit=crop"
+                alt="Fashion — clothing and accessories" class="hero-card-img">
+              <div class="hero-card-overlay">
+                <span class="hero-card-tag">Fashion</span>
+                <span class="hero-card-label">Trending</span>
+              </div>
+            </div>
+
+            <div class="hero-card">
+              <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=400&q=80&fit=crop"
+                alt="Home & Living — furniture and decor" class="hero-card-img">
+              <div class="hero-card-overlay">
+                <span class="hero-card-tag">Home & Living</span>
+                <span class="hero-card-label">Shop Now</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="categories-strip" aria-label="Browse categories">
+      <div class="categories-inner">
+        <button class="cat-chip active" data-category="all">🏠 All</button>
+        <button class="cat-chip" data-category="electronics">📱 Electronics</button>
+        <button class="cat-chip" data-category="fashion">👗 Fashion</button>
+        <button class="cat-chip" data-category="home">🏡 Home & Living</button>
+        <button class="cat-chip" data-category="sports">⚽ Sports</button>
+        <button class="cat-chip" data-category="books">📚 Books</button>
+        <button class="cat-chip" data-category="beauty">💄 Beauty</button>
+        <button class="cat-chip" data-category="toys">🧸 Toys</button>
+        <button class="cat-chip" data-category="food">🍎 Food</button>
+      </div>
+    </div>
+
+    <section class="products-section" id="products" aria-labelledby="products-heading">
+      <div class="container">
+
+        <div class="section-header">
+          <div>
+            <h2 class="section-title" id="products-heading">Featured Products</h2>
+            <p class="section-sub">
+              Handpicked picks just for you
+              <button onclick="initHomePage()" class="btn-refresh" title="Refresh products" style="background:none;border:none;cursor:pointer;margin-left:8px;opacity:0.6;transition:0.2s">
+                🔄
+              </button>
+            </p>
+          </div>
+          <a href="#" class="view-all">
+            View all
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+
+        <div class="products-grid" id="products-grid" role="list" aria-live="polite" aria-label="Products">
+
+        </div>
+
+      </div>
+    </section>
+
+    <section style="background:var(--navy);padding:40px 0">
+      <div class="container">
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:24px;text-align:center">
+          <div style="color:rgb(0, 0, 0)">
+            <div style="font-size:2rem;margin-bottom:8px">🚚</div>
+            <div style="font-weight:700;margin-bottom:4px">Free Shipping</div>
+            <div style="font-size:0.85rem;opacity:.6">On orders above ₹499</div>
+          </div>
+          <div style="color:rgb(0, 0, 0)">
+            <div style="font-size:2rem;margin-bottom:8px">↩️</div>
+            <div style="font-weight:700;margin-bottom:4px">Easy Returns</div>
+            <div style="font-size:0.85rem;opacity:.6">30-day hassle-free returns</div>
+          </div>
+          <div style="color:rgb(0, 0, 0)">
+            <div style="font-size:2rem;margin-bottom:8px">🔒</div>
+            <div style="font-weight:700;margin-bottom:4px">Secure Payments</div>
+            <div style="font-size:0.85rem;opacity:.6">100% encrypted transactions</div>
+          </div>
+          <div style="color:rgb(0, 0, 0)">
+            <div style="font-size:2rem;margin-bottom:8px">💬</div>
+            <div style="font-weight:700;margin-bottom:4px">24/7 Support</div>
+            <div style="font-size:0.85rem;opacity:.6">We're always here for you</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-logo">
+            <div class="logo-mark"><img src="assets/logo.png" alt=""></div>
+            <span class="logo-text" style="color:white">Shop<span>Wave</span></span>
+          </div>
+          <p>Your one-stop destination for everything you need. Quality products, unbeatable prices.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="#">Electronics</a></li>
+            <li><a href="#">Fashion</a></li>
+            <li><a href="#">Home & Living</a></li>
+            <li><a href="#">Beauty</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Account</h4>
+          <ul>
+            <li><a href="#">My Orders</a></li>
+            <li><a href="cart.html">My Cart</a></li>
+            <li><a href="#">Wishlist</a></li>
+            <li><a href="#">Profile</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Track Order</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 ShopWave. All rights reserved.</span>
+        <span>Made with ❤️ for great shopping experiences</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
