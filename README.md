@@ -1,6 +1,6 @@
 # ShopWave — E-Commerce Platform
 
-A full-stack e-commerce web application built with a **Spring Boot** backend and a **Vanilla JS / HTML / CSS** frontend.
+A full-stack e-commerce web application built with a **Spring Boot** backend and a **JS / HTML / CSS** frontend.
 
 ---
 
